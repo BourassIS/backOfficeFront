@@ -1,0 +1,59 @@
+<div class="container-fluid mb-2 p-2" style="background-color: #f8f8f8; height: 20vh;border-radius:18px">
+    <div class="container row d-flex m-0 p-0" style="background-color: ''; height: 100%;">
+        <div class="col-md-2" style="background-color: ''; display: flex; justify-content: center; align-items: center;">
+            <img src="assets/svg/avatarJabakV2.svg" height="80px">
+        </div>
+        <div class="col-md-8 d-block mt-2" style="background-color: ''; justify-content: left; align-items: center;">
+            
+            <div class="div d-flex Lato">
+                <h6 style="color: #6415ff;">Agent   : <span style="color: #181c2e;">{{agent.firstName}} {{agent.lastName}}</span></h6>
+                 
+            </div>
+            <div class="div d-flex Lato">
+                <h6 style="color: #6415ff;">Email   : <span style="color: #181c2e;">{{agent.email}}</span></h6>
+              
+            </div>
+            <div class="div d-flex Lato">
+                <h6 style="color: #6415ff;">Phone number  : <span style="color: #181c2e;">{{agent.phoneNumber}}</span></h6>
+                
+            </div>
+            <div class="div d-flex Lato">
+                <h6 style="color: #6415ff;">Address   : <span style="color: #181c2e;">{{agent.address}}</span></h6>
+                
+            </div>
+        </div>
+        
+        <div class="col-md-2 pl-5 d-block" style="background-color: ''; justify-content: space-between;" >
+            <div class=' text-center LatoM '>
+                <button type='submit' class="btn btn-block  botton mb-1 mt-2" (click)="detailsBtn()" style="font-size: 12px; background-color: #181c2e; color: #fff; border-radius:8.86px ; width: 100%; "
+                >Plus d'infos</button>
+            </div>
+            <div class=' text-center LatoM '>
+                <button type='submit' class="btn btn-block  botton mb-1" (click)="editAgentBtn()" style="font-size: 12px; background-color: #181c2e; color: #fff; border-radius:8.86px ; width: 100%;"
+                >Modifier</button>
+            </div>
+            <div class=' text-center LatoM '>
+                <button type='submit' class="btn btn-block  botton " (click)="onDelete()" style="font-size: 12px; background-color: #ff2e2e; color: #fff; border-radius:8.86px ; width: 100%;"
+                >Supprimer</button>
+            </div>
+
+        
+        </div>
+    </div>
+
+</div>
+
+
+<!-- <dl class="row">
+    <dt class="col-sm-3 Lato" style="color:#6415FF;">Agent</dt>
+    <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.firstName}} {{agent.lastName}}</dd>
+
+    <dt class="col-sm-3 Lato" style="color:#6415FF;">Email </dt>
+    <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.email}}</dd>
+
+    <dt class="col-sm-3 Lato" style="color:#6415FF;">Phone number </dt>
+    <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.phoneNumber}}</dd>
+
+    <dt class="col-sm-3 Lato" style="color:#6415FF;">Adress </dt>
+    <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.address}}</dd>
+</dl> -->

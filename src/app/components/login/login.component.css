@@ -1,0 +1,45 @@
+.divGaucheLogin{
+    background: rgb(100,21,255);
+    background: linear-gradient(45deg, #6415ff 20%, #181c2e 100%);
+}
+
+.cardLogin{
+    border-radius:20px ;
+    background-color: #fff ;
+    color: #000;
+    width: 350px;
+    height: 375px;
+
+
+}
+
+.inpt{
+    border-radius: 12.5px;
+    background-color: #fff
+    
+   
+}
+
+.botton {
+background-color: #6415ff;
+width: 100%;
+color: #fff;
+border-radius:12.5px ;
+}
+
+.form-check-input {
+    border-radius: 3px;
+}
+
+.form-check-input:checked {
+    background-color: #6415ff;
+    border-color: #6415ff;
+    border-radius: 3px;
+}
+
+@media (min-width: 576px) { 
+    .divGaucheLogin {
+        display: none;
+      }
+      
+ }

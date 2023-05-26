@@ -1,0 +1,74 @@
+{
+  "agents": [
+    {
+      "id": 5,
+      "firstName": "Michael",
+      "lastName": "Miller",
+      "address": "654 Maple St",
+      "email": "michaelmiller@example.com",
+      "phoneNumber": "0602479194",
+      "CommercialRn": "CRN654",
+      "patentNumber": "P567890"
+    },
+    {
+      "id": 6,
+      "firstName": "Sophia",
+      "lastName": "Taylor",
+      "address": "987 Cedar St",
+      "email": "sophiataylor@example.com",
+      "phoneNumber": "077140988",
+      "CommercialRn": "CRN987",
+      "patentNumber": "P012345"
+    },
+    {
+      "id": 7,
+      "firstName": "Daniel",
+      "lastName": "Anderson",
+      "address": "234 Oak St",
+      "email": "danielanderson@example.com",
+      "phoneNumber": "055432109",
+      "CommercialRn": "CRN234",
+      "patentNumber": "P678901"
+    },
+    {
+      "id": 8,
+      "firstName": "Olivia",
+      "lastName": "Thomas",
+      "address": "567 Elm St",
+      "email": "oliviathomas@example.com",
+      "phoneNumber": "078545876",
+      "CommercialRn": "CRN567",
+      "patentNumber": "P234567"
+    },
+    {
+      "id": 9,
+      "firstName": "William",
+      "lastName": "Walker",
+      "address": "890 Pine St",
+      "email": "williamwalker@example.com",
+      "phoneNumber": "060279855",
+      "CommercialRn": "CRN890",
+      "patentNumber": "P456789"
+    },
+    {
+      "firstName": "ahmed",
+      "lastName": "alaoui",
+      "address": "morrocco dsdsncsd45ds",
+      "email": "i.bourass4979@uca.ac.ma",
+      "phoneNumber": 8522211212,
+      "CommercialRn": "hjsdnc54ds",
+      "patentNumber": "sdds54",
+      "id": 11
+    },
+    {
+      "firstName": "issam",
+      "lastName": "bourass",
+      "address": "hjdsf,sd dsfds4",
+      "email": "i.bourass4979@uca.ac.ma",
+      "phoneNumber": 742142141,
+      "CommercialRn": "ndnd,sn,5",
+      "patentNumber": "jdsn,ds4",
+      "id": 13
+    }
+  ]
+}

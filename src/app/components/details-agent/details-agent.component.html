@@ -1,0 +1,55 @@
+ <!-- Loading spinner -->
+ <div *ngIf="loading">
+    <spinner></spinner>
+</div>
+
+<!-- Error message -->
+<div *ngIf="!loading && errorMessage">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger fw-bold">{{errorMessage}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!loading && isNotEmpty()" class=" div m-0 p-0 detailsAgentScroll scrollbar scrollbar-indigo bordered-indigo" style="position: relative; height: 78vh; background-color:#fff; border-radius: 12px; ">
+    
+                 <div class=" border-0  p-3  " style="background-color:#6415FF; height: 85px;border-radius: 12px 12px 0px 0px; display: flex; justify-content: end;" > 
+                    <div type="button" routerLink="/dash/list"><i class="fa-solid fa-xmark fa-2xl" style="color: #fff; "></i></div>    
+                </div>
+                <div class="col-md-4" style=" transform: translateY(-50px); background-color: '';  margin-left: 30px;">
+                    <img  src="assets/svg/avatarJabakV3.svg" height="100px">
+                    <h4 class="MontserratB">{{agent.firstName}} {{agent.lastName}}</h4>
+                </div>
+                
+                <div class="div px-4 pb-4"  style="transform: translateY(-50px); background-color:''; height: 60vh; ">
+                    <div class=" p-4" style="background-color:#f8f8f8;border-radius: 12px;">
+                        <dl class="row">
+                            <dt class="col-sm-4 Lato" style="color:#6415FF;">CIN</dt>
+                            <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>BW494904</dd>
+
+                            <dt class="col-sm-4 Lato" style="color:#6415FF;">Birthday</dt>
+                            <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>21/06/1997</dd>
+
+                            <dt class="col-sm-4 Lato" style="color:#6415FF;">Address</dt>
+                            <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.address}}</dd>
+
+                            <dt class="col-sm-4 Lato" style="color:#6415FF;">Email</dt>
+                            <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.email}}</dd>
+
+                            <dt class="col-sm-4 Lato" style="color:#6415FF;">Phone</dt>
+                            <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.phoneNumber}}</dd>
+
+                            <dt class="col-sm-4 Lato" style="color:#6415FF;">Commercial Register Number </dt>
+                            <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.CommercialRn}}</dd>
+
+                            <dt class="col-sm-4 Lato" style="color:#6415FF;">Patent Number</dt>
+                            <dd class="col-sm-8 Lato"><span style="color:#6415FF;">:   </span>{{agent.patentNumber}}</dd>
+                        </dl>
+                    </div>
+                </div>
+          
+     
+ </div>

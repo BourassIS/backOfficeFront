@@ -1,0 +1,55 @@
+<div class="div d-block m-0 p-0 addAgentScroll scrollbar scrollbar-indigo bordered-indigo" style=" height: 84vh; background-color:''; 
+border-radius: 12px;  display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="divBar p-2  mb-3  container-fluid " style="background-color:#fff;border-radius:18px">
+        <div  class=" " >
+            <div class="row d-flex justify-content-between">
+                <div class=" col-md-4 listAgent">
+                    <div> <h2 class='Lato' style="color:#181c2e" >Agents List</h2></div>
+                </div>   
+
+                <div class="col-md-4 inputSearch">
+                    <div class="" style="background-color:''">
+
+                        <div class="p-1" style="background-color:#ededed; border-radius:20px">
+                            <div class="input-group"  >
+                                <input type="search" placeholder="Chercher Un agent" 
+                                class="form-control " style="border-radius:20px; max-width:100%; width: 50%; background-color:#f8f8f8;color:#000"/>
+                                <div class="input-group-append">
+                                    <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search" style="color:#fff"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Loading spinner -->
+    <div *ngIf="loading">
+        <spinner></spinner>
+    </div>
+
+    <!-- Error message -->
+    <div *ngIf="!loading && errorMessage">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="h4 text-danger fw-bold">{{errorMessage}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generate cards -->
+    <div *ngIf="!loading && agents.length > 0"  class="container-fluid mt-2 p-2 listAgentScroll scrollbar scrollbar-indigo bordered-indigo" style="background-color: #fff; height: 72vh;border-radius:18px">
+        <div *ngFor="let agent of agents">
+            <card-agent [agent]="agent" (deleteAgentEvent)="deleteAgent(agent.id)"></card-agent>
+        </div>
+        
+    </div>
+
+
+</div>

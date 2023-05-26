@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+  font-family: Montserrat;
+  src: url(./assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+.Montserrat{
+  font-family: Montserrat;
+}
+
+
+@font-face{
+  font-family: MontserratL;
+  src: url(./assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+.MontserratL{
+  font-family: MontserratL;
+}
+
+@font-face{
+  font-family: MontserratM;
+  src: url(./assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+.MontserratM{
+  font-family: MontserratM;
+}
+
+@font-face{
+  font-family: MontserratB;
+  src: url(./assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+.MontserratB{
+  font-family: MontserratB;
+}
+
+@font-face{
+  font-family: MontserratK;
+  src: url(./assets/fonts/Montserrat/Montserrat-Black.ttf);
+}
+
+.MontserratK{
+  font-family: MontserratK;
+}
+
+
+ 
+
+
+  @font-face{
+    font-family: Lato;
+    src: url(./assets/fonts/Lato/Lato-Regular.ttf);
+  }
+  
+  .Lato{
+    font-family: Lato;
+  }
+  
+  
+  @font-face{
+    font-family: LatoL;
+    src: url(./assets/fonts/Lato/Lato-Light.ttf);
+  }
+  
+  .LatoL{
+    font-family: LatoL;
+  }
+  
+  @font-face{
+    font-family: LatoT;
+    src: url(./assets/fonts/Lato/Lato-Thin.ttf);
+  }
+  
+  .LatoT{
+    font-family: LatoT;
+  }
+  
+  @font-face{
+    font-family: LatoB;
+    src: url(./assets/fonts/Lato/Lato-Bold.ttf);
+  }
+  
+  .LatoB{
+    font-family: LatoB;
+  }
+  
+  @font-face{
+    font-family: LatoK;
+    src: url(./assets/fonts/Lato/Lato-Black.ttf);
+  }
+
+  .LatoK{
+    font-family: LatoK;
+  }
+  
+  

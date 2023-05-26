@@ -1,0 +1,136 @@
+<div class="div m-0 p-0 addAgentScroll scrollbar scrollbar-indigo bordered-indigo" style=" height: 84vh; background-color:''; border-radius: 12px;  display: flex; justify-content: center; align-items: flex-start;">
+    <form class="container-fluid m-0 p-0" >
+                 <div class="card border-0  shadow px-1  " >
+ 
+                     <div class="card-body">
+                         <!-- <h1 class="card-title text-center MontserratB" style="color:#6415FF">Ajouter un agent</h1> -->
+                         
+                         <p class="card-title text-left MontserratM" style="color:#6415FF">Informations personnelles</p>  
+                         <hr style="color:#6415FF"/>
+                         <div class="card-text py-2" >
+ 
+                             <div class=" " style=" align-items: center; justify-content:space-between " >
+                                             <div class=" row g-2 mb-4 ">
+                                                 <div class="form-floating col-md-4  ">
+                                                 <input [(ngModel)]="agent.name" name="name" type='text' class='form-control m-0' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8"/>
+                                                 <label class='Montserrat' style="color:#242846">Nom *</label>
+                                                 </div>
+                         
+                                                 <div class="form-floating col-md-4">
+                                                 <input [(ngModel)]="agent.username" name="username" type='text' class='form-control' 
+                                                 placeholder='Prénom' style="border-radius:20px; background-color:#F8F8F8;"/>
+                                                 <label class='Montserrat' style="color:#242846">Prénom *</label>
+                                                 </div>
+                                                 
+                                                 <!-- <div class="form-floating col-md-4">
+                                                 <input type='date' class='form-control' 
+                                                 placeholder='Date de naissance' style="border-radius:20px; background-color:#F8F8F8;"/>
+                                                 <label class='Montserrat' style="color:#242846">Date de naissance *</label>
+                                                 </div> -->
+ 
+                                         
+                                             </div>
+ 
+                                             <!-- <div class="row g-2 mb-4">
+                                                 <div class="form-floating col-md-6 ">
+                                                     <select placeholder="" class="form-select" aria-label="Default select example" required
+                                                         style="border-radius:20px; background-color:#F8F8F8;">
+                                                         <option value="Essence">Cin</option>
+                                                         <option value="Diesel">Passport</option> 
+                                                     </select>
+                                                     <label class='Montserrat' style="color:#242846">Piece d'identité *</label>
+                                                 </div>
+ 
+                                                 <div class="form-floating col-md-6">
+                                                 <input  type='text' class='form-control' 
+                                                 placeholder="N° pièce d'identité" style="border-radius:20px; background-color:#F8F8F8;" required/>
+                                                 <label class='Montserrat' style="color:#242846">N° pièce d'identité *</label>
+                                                 </div>
+                                             </div> -->
+ 
+                                             <div class="row g-2 mb-4">
+                                                 <div class="form-floating col-md-12">
+                                                 <input [(ngModel)]="agent.adresse" name="adresse" type='text' class='form-control' 
+                                                 placeholder="Adresse" style="border-radius:20px; background-color:#F8F8F8;" required/>
+                                                 <label class='Montserrat' style="color:#242846">Adresse *</label>
+                                                 </div>
+                                             </div>
+ 
+                                             <div class=" row g-2 mb-4 ">
+                                                 <div class="form-floating col-md-6  ">
+                                                 <input [(ngModel)]="agent.email" name="email" type='Email' class='form-control ' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8" required/>
+                                                 <label class='Montserrat' style="color:#242846">Email *</label>
+                                                 </div>
+                         
+                                                 <!-- <div class="form-floating col-md-6">
+                                                 <input  type='email' class='form-control' 
+                                                 placeholder='Confirmation Email' style="border-radius:20px; background-color:#F8F8F8;" required/>
+                                                 <label class='Montserrat' style="color:#242846">Confirmation Email</label>
+                                                 </div>                                       -->
+                                         
+                                             </div>
+ 
+                                             <div class=" row g-2 mb-4 ">
+ 
+                                                 <div class="form-floating col-md-4">
+                                                     <input [(ngModel)]="agent.phone" name="phone" type='number' class='form-control' 
+                                                     placeholder='Numéro de téléphone' style="border-radius:20px; background-color:#F8F8F8;" required/>
+                                                     <label class='Montserrat' style="color:#242846">Numéro de téléphone *</label>
+                                                     </div>
+ 
+                                                 <!-- <div class="form-floating col-md-4  ">
+                                                 <input type='text' class='form-control ' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8" required/>
+                                                 <label class='Montserrat' style="color:#242846">N° d'immatriculation au registre de commerce *</label>
+                                                 </div>
+                         
+                                                 <div class="form-floating col-md-4">
+                                                 <input  type='text' class='form-control' 
+                                                 placeholder='N° de patente' style="border-radius:20px; background-color:#F8F8F8;" required/>
+                                                 <label class='Montserrat' style="color:#242846">N° de patente *</label>
+                                                 </div> -->
+
+                                             </div>
+ 
+                                             
+                             </div>
+                         </div>
+                        
+                         <!-- {{agent}} -->
+                         <p class="card-title text-left MontserratM" style="color:#6415FF">Pièces jointes  </p>  
+                         <hr style="color:#6415FF"/>
+
+                         <!-- <div class=" row g-2 mb-4 ">
+ 
+                            <div class="form-floating col-md-5">
+                                <input type='text' class='form-control' 
+                                placeholder='Description' style="border-radius:20px; background-color:#F8F8F8;" required/>
+                                <label class='Montserrat' style="color:#242846">Description *</label>
+                            </div>
+
+                            <div class="col-md-7 p-0">
+                                <div class="input-group mb-3 px-2 py-2  " style="border-radius:20px; background-color:#F8F8F8; height: 58px;border :1px solid  #CBC8D0">
+                                    <input  id="upload" type="file" accept="image/*" class="form-control "  />
+                                    <label id="upload-label" htmlFor="upload" class="font-weight-light text-muted">Choose file</label>
+
+                                    <div class="input-group-append " >
+                                        <label htmlFor="upload" class="btn btn-light m-0 rounded-pill px-4" style="background-color:#6415FF; color: #fff;"> 
+                                        <i class="fa fa-cloud-upload mr-2 text-muted"></i>
+                                        <small class="text-uppercase font-weight-bold ">+ Ajouter l'image</small>
+                                        </label>
+                                    </div>
+                                </div>
+          
+                                
+          
+                            </div>
+    
+                            
+
+                        </div>
+  -->
+                         <div (click)="createAgent()" class="btn btn-block py-2 container-fluid "
+                         style="background-color:#242846; color:#fff; border-radius:20px; cursor:pointer" ><span class='Montserrat' style="color:white">Ajouter l'agent</span></div>
+                     </div>
+                 </div>
+     </form>
+ </div>

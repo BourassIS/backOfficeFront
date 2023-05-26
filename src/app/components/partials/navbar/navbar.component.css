@@ -1,0 +1,12 @@
+.nav{
+    height: 10vh; 
+    background: rgb(100,21,255);
+    background: linear-gradient(45deg, #181c2e 20% ,#6415ff 100%);
+}
+
+.botton {
+    background-color: #f46262;
+    color: #fff;
+    border-radius:8.86px ;
+
+}
