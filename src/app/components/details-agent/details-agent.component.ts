@@ -21,7 +21,8 @@ export class DetailsAgentComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((param)=>{
-      this.id =param.get('id');
+      this.id = param.get('id');
+      console.log(this.id);
     });
     if(this.id){
       this.loading=true;

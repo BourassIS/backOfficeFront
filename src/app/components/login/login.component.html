@@ -9,17 +9,17 @@
             <div class="card-body">
             
                 <div class="card-text py-2 px-1 " >
-                    <form  #loginForm="ngForm"  (ngSubmit)="login(loginForm)" >
+                    <form   #loginForm="ngForm" (ngSubmit)="login(loginForm)" >
 
                         <div class="form-group ">
                         <label class="mb-2 LatoB" for="email">Email</label>
-                        <input type='email' class='form-control  mb-4 py-2 inpt' ngModel name="agentEmail" id="agentEmail"
+                        <input type='email' ngModel name="email" id="email" class='form-control  mb-4 py-2 inpt' 
                         placeholder='' />    
                         </div>
 
                         <div class="form-group ">
                         <label class="mb-2 LatoB" for="password">Mot de passe</label>
-                        <input type='password' class='form-control  mb-4 py-2 inpt' ngModel name="agentPassword" id="agentPassword"
+                        <input type='password'ngModel name="password" id="password" class='form-control  mb-4 py-2 inpt'
                         placeholder='' />
                         </div>   
                         

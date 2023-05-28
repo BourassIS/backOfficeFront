@@ -1,16 +1,6 @@
 {
   "agents": [
     {
-      "id": 5,
-      "firstName": "Michael",
-      "lastName": "Miller",
-      "address": "654 Maple St",
-      "email": "michaelmiller@example.com",
-      "phoneNumber": "0602479194",
-      "CommercialRn": "CRN654",
-      "patentNumber": "P567890"
-    },
-    {
       "id": 6,
       "firstName": "Sophia",
       "lastName": "Taylor",
@@ -59,16 +49,6 @@
       "CommercialRn": "hjsdnc54ds",
       "patentNumber": "sdds54",
       "id": 11
-    },
-    {
-      "firstName": "issam",
-      "lastName": "bourass",
-      "address": "hjdsf,sd dsfds4",
-      "email": "i.bourass4979@uca.ac.ma",
-      "phoneNumber": 742142141,
-      "CommercialRn": "ndnd,sn,5",
-      "patentNumber": "jdsn,ds4",
-      "id": 13
     }
   ]
 }

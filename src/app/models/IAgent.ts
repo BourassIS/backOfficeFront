@@ -1,5 +1,5 @@
 export interface IAgent {
-    id? : string;
+    id? : number;
     firstName : string;
     lastName : string;
     address  : string;

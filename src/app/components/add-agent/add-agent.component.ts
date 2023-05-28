@@ -23,7 +23,7 @@ export class AddAgentComponent implements OnInit {
   }
   
   createSubmit(){
-    this.agentService.createAgent(this.agent).subscribe((data)=>{
+    this.agentService.createAgent(this.agent).subscribe((data: any)=>{
       this.router.navigate([`/dash/list`]).then();
     }, (error) => {
       this.errorMessage=error;

@@ -34,9 +34,9 @@ export class ListAgentComponent {
     })
   }
 
-  deleteAgent(id: string | undefined){
+  deleteAgent(id: number | undefined){
     if(id){
-      this.agentService.deleteAgent(parseInt(id)).subscribe((data)=>{
+      this.agentService.deleteAgent(id).subscribe((data)=>{
         this.getAllAgentFromServer();
       },(error)=>{
         this.errorMessage=error;

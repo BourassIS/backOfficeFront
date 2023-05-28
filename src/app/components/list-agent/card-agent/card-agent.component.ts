@@ -12,7 +12,7 @@ import { AgentService } from 'src/app/services/agent.service';
 })
 export class CardAgentComponent {
 
-  @Input() agent: any;
+  @Input() agent:IAgent = {} as IAgent;
 
   @Output() deleteAgentEvent = new EventEmitter<number>();
 
@@ -24,9 +24,8 @@ export class CardAgentComponent {
  
 
   detailsBtn(){
-    
+    console.log(this.agent.id);
     this.router.navigate([`dash/agent/${this.agent.id}`])
-
   }
 
   editAgentBtn(){
