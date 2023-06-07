@@ -21,7 +21,7 @@ export class ListAgentComponent {
   
   searchValue: string = '';
 
-  filterClients(): any[] {
+  filterAgents(): any[] {
     return this.agents.filter(agent => agent.firstName.toLowerCase().includes(this.searchValue.toLowerCase()));
   }
 
