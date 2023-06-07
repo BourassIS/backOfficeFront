@@ -18,6 +18,13 @@ export class ListAgentComponent {
 
   constructor(private router: Router, private agentService : AgentService) {}
 
+  
+  searchValue: string = '';
+
+  filterClients(): any[] {
+    return this.agents.filter(agent => agent.firstName.toLowerCase().includes(this.searchValue.toLowerCase()));
+  }
+
   ngOnInit(): void {
     this.getAllAgentFromServer();
   }

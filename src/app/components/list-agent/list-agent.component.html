@@ -45,7 +45,7 @@ border-radius: 12px;  display: flex; justify-content: center; align-items: flex-
 
     <!-- Generate cards -->
     <div *ngIf="!loading && agents.length > 0"  class="container-fluid mt-2 p-2 listAgentScroll scrollbar scrollbar-indigo bordered-indigo" style="background-color: #fff; height: 72vh;border-radius:18px">
-        <div *ngFor="let agent of agents">
+        <div *ngFor="let agent of agents && filterAgents()">
             <card-agent [agent]="agent" (deleteAgentEvent)="deleteAgent(agent.id)"></card-agent>
         </div>
         
