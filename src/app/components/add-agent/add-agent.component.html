@@ -43,7 +43,7 @@
                                                  </div>
                                                  
                                                  <div class="form-floating col-md-4">
-                                                 <input type='date'  class='form-control' 
+                                                 <input type='date'  class='form-control' [(ngModel)]="agent.lastName"
                                                  placeholder='Date de naissance' style="border-radius:20px; background-color:#F8F8F8;"/>
                                                  <label class='Montserrat' style="color:#242846">Date de naissance *</label>
                                                  </div>
@@ -55,8 +55,8 @@
                                                  <div class="form-floating col-md-6 ">
                                                      <select placeholder="" class="form-select" aria-label="Default select example" required="true"
                                                          style="border-radius:20px; background-color:#F8F8F8;">
-                                                         <option value="Essence">Cin</option>
-                                                         <option value="Diesel">Passport</option> 
+                                                         <option value="Cin">Cin</option>
+                                                         <option value="Passport">Passport</option> 
                                                      </select>
                                                      <label class='Montserrat' style="color:#242846">Piece d'identité *</label>
                                                  </div> 
@@ -93,13 +93,13 @@
                                              <div class=" row g-2 mb-4 ">
  
                                                  <div class="form-floating col-md-4">
-                                                     <input  type='number' [(ngModel)]="agent.phoneNumber" name="phoneNumber" class='form-control' 
+                                                     <input  type='text' [(ngModel)]="agent.phoneNumber" name="phoneNumber" class='form-control' 
                                                      placeholder='Numéro de téléphone' style="border-radius:20px; background-color:#F8F8F8;" required="true"/>
                                                      <label class='Montserrat' style="color:#242846">Phone number *</label>
                                                      </div>
  
                                                  <div class="form-floating col-md-4  ">
-                                                 <input type='text' [(ngModel)]="agent.CommercialRn" name="CommercialRn"   class='form-control ' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8" required="true"/>
+                                                 <input type='text' [(ngModel)]="agent.commercialRn" name="commercialRn"   class='form-control ' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8" required="true"/>
                                                  <label class='Montserrat' style="color:#242846">Commercial Register Number *</label>
                                                  </div>
                          

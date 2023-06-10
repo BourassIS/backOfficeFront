@@ -7,6 +7,7 @@ export interface IAgent {
     confirmEmail : string;
     cin : string;
     phoneNumber : string;
-    CommercialRn : string;
+    commercialRn : string;
     patentNumber : string;
+    birthDate : Date;
 }

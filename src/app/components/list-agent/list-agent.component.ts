@@ -11,6 +11,12 @@ import { AgentService } from 'src/app/services/agent.service';
 })
 export class ListAgentComponent {
 
+searchValue: string = '';
+
+  filterAgents(): any[] {
+    return this.agents.filter(agent => agent.firstName.toLowerCase().includes(this.searchValue.toLowerCase()));
+  }
+
 
   public loading: boolean = false;
   public agents: IAgent[] = [];
@@ -19,12 +25,7 @@ export class ListAgentComponent {
   constructor(private router: Router, private agentService : AgentService) {}
 
   
-  searchValue: string = '';
-
-  filterAgents(): any[] {
-    return this.agents.filter(agent => agent.firstName.toLowerCase().includes(this.searchValue.toLowerCase()));
-  }
-
+  
   ngOnInit(): void {
     this.getAllAgentFromServer();
   }

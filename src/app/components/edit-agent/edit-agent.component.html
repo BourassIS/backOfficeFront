@@ -24,31 +24,31 @@
                                                  <label class='Montserrat' style="color:#242846">Last Name *</label>
                                                  </div>
                                                  
-                                                 <!-- <div class="form-floating col-md-4">
-                                                 <input type='date' class='form-control' 
+                                                 <div class="form-floating col-md-4">
+                                                 <input type='date' class='form-control' [(ngModel)]="agent.birthDate" name="birthDate"
                                                  placeholder='Date de naissance' style="border-radius:20px; background-color:#F8F8F8;"/>
                                                  <label class='Montserrat' style="color:#242846">Date de naissance *</label>
-                                                 </div> -->
+                                                 </div>
   
                                          
                                              </div>
  
-                                             <!-- <div class="row g-2 mb-4">
+                                             <div class="row g-2 mb-4">
                                                  <div class="form-floating col-md-6 ">
                                                      <select placeholder="" class="form-select" aria-label="Default select example" required="true"
                                                          style="border-radius:20px; background-color:#F8F8F8;">
-                                                         <option value="Essence">Cin</option>
-                                                         <option value="Diesel">Passport</option> 
+                                                         <option value="Cin">Cin</option>
+                                                         <option value="Passport">Passport</option> 
                                                      </select>
                                                      <label class='Montserrat' style="color:#242846">Piece d'identité *</label>
                                                  </div> 
  
                                                  <div class="form-floating col-md-6">
-                                                 <input  type='text' class='form-control' 
+                                                 <input  type='text' class='form-control'  [(ngModel)]="agent.cin" name="cin"
                                                  placeholder="N° pièce d'identité" style="border-radius:20px; background-color:#F8F8F8;" required="true"/>
                                                  <label class='Montserrat' style="color:#242846">N° pièce d'identité *</label>
                                                  </div>
-                                             </div> -->
+                                             </div>
  
                                              <div class="row g-2 mb-4">
                                                  <div class="form-floating col-md-12">
@@ -59,7 +59,7 @@
                                              </div>
  
                                              <div class=" row g-2 mb-4 ">
-                                                 <div class="form-floating col-md-6  ">
+                                                 <div class="form-floating col-md-12  ">
                                                  <input  type='Email' [(ngModel)]="agent.email" name="email" [value]="agent.email"  class='form-control ' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8" required="true"/>
                                                  <label class='Montserrat' style="color:#242846">Email *</label>
                                                  </div>
@@ -75,13 +75,13 @@
                                              <div class=" row g-2 mb-4 ">
  
                                                  <div class="form-floating col-md-4">
-                                                     <input  type='number' [(ngModel)]="agent.phoneNumber" name="phoneNumber" [value]="agent.phoneNumber"  class='form-control' 
+                                                     <input  type='text' [(ngModel)]="agent.phoneNumber" name="phoneNumber" [value]="agent.phoneNumber"  class='form-control' 
                                                      placeholder='Numéro de téléphone' style="border-radius:20px; background-color:#F8F8F8;" required="true"/>
                                                      <label class='Montserrat' style="color:#242846">Phone number *</label>
                                                      </div>
  
                                                  <div class="form-floating col-md-4  ">
-                                                 <input type='text' [(ngModel)]="agent.CommercialRn" name="CommercialRn"  [value]="agent.CommercialRn" class='form-control ' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8" required="true"/>
+                                                 <input type='text' [(ngModel)]="agent.commercialRn" name="commercialRn"  [value]="agent.commercialRn" class='form-control ' placeholder='Nom' style="border-radius:20px; background-color:#F8F8F8" required="true"/>
                                                  <label class='Montserrat' style="color:#242846">Commercial Register Number *</label>
                                                  </div>
                          
@@ -98,8 +98,8 @@
                          </div>
                         
                         
-                         <p class="card-title text-left MontserratM" style="color:#6415FF">Pièces jointes  </p>  
-                         <hr style="color:#6415FF"/>
+                         <!-- <p class="card-title text-left MontserratM" style="color:#6415FF">Pièces jointes  </p>  
+                         <hr style="color:#6415FF"/> -->
 
                          <!-- <div class=" row g-2 mb-4 ">
  

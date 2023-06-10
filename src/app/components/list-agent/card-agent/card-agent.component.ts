@@ -12,7 +12,7 @@ import { AgentService } from 'src/app/services/agent.service';
 })
 export class CardAgentComponent {
 
-  @Input() agent:IAgent = {} as IAgent;
+  @Input() agent: any;
 
   @Output() deleteAgentEvent = new EventEmitter<number>();
 
